@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var email = ""
+    @State private var password = ""
+    @State private var text = "Welcome!"
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hola")
+       VStack {
+          Text(text)
+               .font(.largeTitle)
+           TextField("Email", text: $email) .multilineTextAlignment(.center) .font(.title) .border(Color.gray, width: 1)
+           TextField("Password", text: $password) .multilineTextAlignment(.center) .font(.title) .border(Color.gray, width: 1)
+
+           Button("Login"){
+           }
+           .buttonStyle(.borderedProminent)
+           .tint(.green)
+          
+
         }
-        .padding()
     }
 }
 
