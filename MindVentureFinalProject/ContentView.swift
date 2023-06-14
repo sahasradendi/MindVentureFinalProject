@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var email = ""
+    @State private var username = ""
     @State private var password = ""
+    @State private var wrongUsername = 0
+    @State private var wrongPassword = 0
+    @State private var showingLoginScreen = false
     @State private var text = "Welcome!"
     var body: some View {
-       VStack {
-          Text(text)
-               .font(.largeTitle)
-           TextField("Email", text: $email) .multilineTextAlignment(.center) .font(.title) .border(Color.gray, width: 1)
-           TextField("Password", text: $password) .multilineTextAlignment(.center) .font(.title) .border(Color.gray, width: 1)
-
-           Button("Login"){
-           }
-           .buttonStyle(.borderedProminent)
-           .tint(.green)
-           .font(.title2)
-           
-           Button("sign-up") { } .font(.title2) .buttonStyle(.borderedProminent) .tint(.green)
-
-
+        NavigationView {
+            ZStack {
+                Color.cyan
+                    .ignoresSafeArea()
+                Circle()
+                    .scale(1.7)
+                    .foregroundColor(.white.opacity(0.15))
+                Circle()
+                    .scale(1.35)
+                    .foregroundColor(Color(hue: 0.875, saturation: 0.398, brightness: 0.914))
+                
+            }
         }
+        
+        
+        
     }
-}
+    }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
