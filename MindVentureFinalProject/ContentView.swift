@@ -22,7 +22,10 @@ struct ContentView: View {
            }
            .buttonStyle(.borderedProminent)
            .tint(.green)
-          
+           
+           
+           Button("sign-up") { } .font(.title2) .buttonStyle(.borderedProminent) .tint(.green)
+
 
         }
     }
