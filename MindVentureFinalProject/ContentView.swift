@@ -55,10 +55,9 @@ struct ContentView: View {
                     .background(Color.pink)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: LoginNext()) {
-                                                Text("Next Question")
+                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
                     }
-                    .padding()
                     
                     
                 }
@@ -78,6 +77,8 @@ struct ContentView: View {
             } else {
                 wrongPassword = 2
             }
+        } else {
+            wrongUsername = 2
         
             
             }
