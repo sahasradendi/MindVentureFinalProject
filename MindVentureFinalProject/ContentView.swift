@@ -13,7 +13,6 @@ struct ContentView: View {
     @State private var wrongUsername = 0
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
-    @State private var present = false
     @State private var text = "Welcome!"
     var body: some View {
         NavigationView {
@@ -44,6 +43,8 @@ struct ContentView: View {
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.12))
+                        .cornerRadius(10)
+                        .border(.pink, width: CGFloat(wrongUsername))
                     
                     Button("Login"){
                        //authenticate user
@@ -53,17 +54,13 @@ struct ContentView: View {
                     .background(Color.pink)
                     .cornerRadius(10)
                     
-                    .alert(isPresented: $present){
-                        Alert(//1
-                    
-                            title: Text("Welcome \(username)!"),
-                            message: Text("Continue"),
-                            dismissButton: .cancel()
-                     )
+                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen){
+                        EmptyView()
                     }
-                    
-                                
+                    }
+                
                                 }
+               
             }
             
             
@@ -77,4 +74,4 @@ struct ContentView: View {
             ContentView()
         }
     }
-}
+
