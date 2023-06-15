@@ -22,7 +22,7 @@ struct LinksPage: View {
                     .padding()
                     .font(.largeTitle)
                     .bold()
-                    .foregroundColor(Color(hue: 0.967, saturation: 0.755, brightness: 0.949))
+                    .foregroundColor(Color(red: 0.863, green: 0.383, blue: 0.504))
                     .overlay (
                         RoundedRectangle(cornerRadius: 10)
             
@@ -34,16 +34,24 @@ struct LinksPage: View {
                     Text("Learn more about anxiety.")
                         .background(
                                         RoundedRectangle(cornerRadius: 10)
-                                            .foregroundColor(.green)
+                                            .foregroundColor(Color(red: 0.227, green: 0.532, blue: 0.113))
+                                            .frame(width: 235, height: 20)
                                         
                                     )
-                        .foregroundColor(Color(hue: 0.287, saturation: 0.797, brightness: 0.533))
+                        .foregroundColor(Color(hue: 0.301, saturation: 0.272, brightness: 0.867))
                     
                 }
                 
                 Link(destination: URL(string: "https://careinfo.mayoclinic.org/mh-depression?mc_id=google&campaign=18451827493&geo=9022196&kw=depression&ad=638111103999&network=g&sitetarget=&adgroup=142809945300&extension=&target=kwd-10387231&matchtype=b&device=c&account=7470347919&placementsite=enterprise&gclid=Cj0KCQjw7aqkBhDPARIsAKGa0oITnZe2v92XxWCGKmeNXUxkif4knlC4L6DyHGyzXqbIE2XoM2pPO-QaAuSzEALw_wcB")!) {
                     Text("Learn more about depression.")
+                        .background(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .foregroundColor(Color(red: 0.227, green: 0.532, blue: 0.113))
+                                            .frame(width: 235, height: 20)
+                                        
+                                    )
                         .foregroundColor(Color(hue: 0.287, saturation: 0.797, brightness: 0.533))
+                        .frame(width: 235, height: 20)
                 }
                 Link(destination: URL(string:"https://www.mind.org.uk/information-support/types-of-mental-health-problems/")!) {
                     Text("Overall mental health.")
@@ -71,12 +79,17 @@ struct LinksPage: View {
         }
         .overlay(
                     RoundedRectangle(cornerRadius: 60)
-                        .stroke(Color(hue: 0.948, saturation: 0.693, brightness: 0.917), lineWidth: 58)
+                        .stroke(Color(hue: 0.948, saturation: 0.677, brightness: 0.969, opacity: 0.791), lineWidth: 70)
                         .edgesIgnoringSafeArea(.all)
-                        .overlay(
-                                            RoundedRectangle(cornerRadius: 60)
-                                                .stroke(Color.green, lineWidth: 15)
-                                                .edgesIgnoringSafeArea(.all)
+        .overlay(
+                    RoundedRectangle(cornerRadius: 60)
+                        .stroke(Color(hue: 0.961, saturation: 0.651, brightness: 0.845), lineWidth: 48)
+                        .edgesIgnoringSafeArea(.all)
+                                        )
+        .overlay(
+                    RoundedRectangle(cornerRadius: 60)
+                        .stroke(Color(red: 0.674, green: 0.227, blue: 0.334), lineWidth: 24)
+                        .edgesIgnoringSafeArea(.all)
                                         )
                 )
     }
