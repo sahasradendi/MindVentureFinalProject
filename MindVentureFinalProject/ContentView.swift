@@ -48,7 +48,7 @@ struct ContentView: View {
                         .border(.pink, width: CGFloat(wrongUsername))
                     
                     Button("Login"){
-                        //authenticate user
+                        authenticateUser(username: username, password: password)
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
@@ -75,7 +75,7 @@ struct ContentView: View {
     
                
             }
-    func authenticateuser(username: String, password: String) {
+    func authenticateUser(username: String, password: String) {
         if username.lowercased() == "mario2021" {
             wrongUsername = 0
             if password.lowercased() == "abc123" {
@@ -84,14 +84,14 @@ struct ContentView: View {
             } else {
                 wrongPassword = 2
             }
-        } else {
+        
             
             }
         }
     }
             
             
-        }
+        
     
     
     
