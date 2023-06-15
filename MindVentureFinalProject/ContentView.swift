@@ -17,26 +17,58 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.cyan
+                Color.pink
                     .ignoresSafeArea()
                 Circle()
                     .scale(1.7)
                     .foregroundColor(.white.opacity(0.15))
                 Circle()
                     .scale(1.35)
-                    .foregroundColor(Color(hue: 0.875, saturation: 0.398, brightness: 0.914))
+                    .foregroundColor(Color(hue: 0.376, saturation: 0.262, brightness: 0.865))
                 
+                VStack {
+                    Text("Login")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding()
+                    
+                    TextField("Username", text: $username)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.12))
+                        .cornerRadius(10)
+                        .border(.white, width: CGFloat(wrongUsername))
+                    
+                    SecureField("Password", text: $password)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.12))
+                    
+                    Button("Login"){
+                       //authenticate user
+                    }
+                    .foregroundColor(.white)
+                    .frame(width: 300, height: 50)
+                    .background(Color.pink)
+                    .cornerRadius(10)
+                    
+                    NavigationLink(destination: Text("You are logged in @\(username)")) {
+                    Text("hola")
+                    }
+                    
+                                
+                                }
             }
+            
+            
+            
         }
-        
-        
-        
     }
-    }
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
