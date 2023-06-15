@@ -55,17 +55,8 @@ struct ContentView: View {
                     .background(Color.pink)
                     .cornerRadius(10)
                     
-                    .alert(isPresented: $present) {
-                        Alert(
-                        
-                            title: Text("Welcome \(username)!"),
-                            message: Text("You have entered MindVenture!"),
-                            dismissButton: .cancel()
-                           
-                            NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen){
-                                EmptyView()
-                            }
-                        )
+                    NavigationLink(destination: LoginNext()) {
+                                                Text("Next Question")
                     }
                     .padding()
                     
