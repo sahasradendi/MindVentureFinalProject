@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var wrongUsername = 0
     @State private var wrongPassword = 0
     @State private var showingLoginScreen = false
+    @State private var present = false
     @State private var text = "Welcome!"
     var body: some View {
         NavigationView {
@@ -47,26 +48,51 @@ struct ContentView: View {
                         .border(.pink, width: CGFloat(wrongUsername))
                     
                     Button("Login"){
-                       //authenticate user
+                        //authenticate user
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
                     .background(Color.pink)
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen){
-                        EmptyView()
+                    .alert(isPresented: $present) {
+                        Alert(
+                        
+                            title: Text("Welcome \(username)!"),
+                            message: Text("You have entered MindVenture!"),
+                            dismissButton: .cancel()
+                        
+                        )
                     }
+                    .padding()
+                    
+                    
+                }
                     }
+            
                 
                                 }
+    
                
             }
+    func authenticateuser(username: String, password: String) {
+        if username.lowercased() == "mario2021" {
+            wrongUsername = 0
+            if password.lowercased() == "abc123" {
+                wrongPassword = 0
+                showingLoginScreen = true
+            } else {
+                wrongPassword = 2
+            }
+        } else {
             
+            }
+        }
+    }
             
             
         }
-    }
+    
     
     
     struct ContentView_Previews: PreviewProvider {
