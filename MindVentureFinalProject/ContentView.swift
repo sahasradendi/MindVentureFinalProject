@@ -61,7 +61,10 @@ struct ContentView: View {
                             title: Text("Welcome \(username)!"),
                             message: Text("You have entered MindVenture!"),
                             dismissButton: .cancel()
-                        
+                           
+                            NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen){
+                                EmptyView()
+                            }
                         )
                     }
                     .padding()
