@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00BF1F262A3B977C00D3C07D /* LinksPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF1F252A3B977C00D3C07D /* LinksPage.swift */; };
 		16277B9D2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16277B9C2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift */; };
 		16277B9F2A3A3BA4004B8220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16277B9E2A3A3BA4004B8220 /* ContentView.swift */; };
 		16277BA12A3A3BA7004B8220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16277BA02A3A3BA7004B8220 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00BF1F252A3B977C00D3C07D /* LinksPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksPage.swift; sourceTree = "<group>"; };
 		16277B992A3A3BA4004B8220 /* MindVentureFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindVentureFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16277B9C2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindVentureFinalProjectApp.swift; sourceTree = "<group>"; };
 		16277B9E2A3A3BA4004B8220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				16277B9C2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift */,
 				16277B9E2A3A3BA4004B8220 /* ContentView.swift */,
+				00BF1F252A3B977C00D3C07D /* LinksPage.swift */,
 				167F2BDC2A3B8FC9001B0A86 /* LoginNext.swift */,
 				16277BA02A3A3BA7004B8220 /* Assets.xcassets */,
 				16277BA22A3A3BA7004B8220 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BF1F262A3B977C00D3C07D /* LinksPage.swift in Sources */,
 				16277B9F2A3A3BA4004B8220 /* ContentView.swift in Sources */,
 				167F2BDD2A3B8FC9001B0A86 /* LoginNext.swift in Sources */,
 				16277B9D2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift in Sources */,
