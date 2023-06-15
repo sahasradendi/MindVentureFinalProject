@@ -19,6 +19,7 @@ struct PromptGen: View {
        "I get anxious when _______",
        "Describe a place where you feel 100% comfortable and at ease in"
        // Add more prompts here...
+       //ok
      ]
      @State private var selectedPrompt = ""
      @State private var textbox = ""
