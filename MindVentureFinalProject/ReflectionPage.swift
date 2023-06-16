@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ReflectionPage: View {
     var body: some View {
-    
         
+        NavigationView {
+            
+            
+            
             VStack {
                 //Text
                 Text("Daily Reflection :)")
@@ -161,7 +164,7 @@ struct ReflectionPage: View {
                                     //push the title to top
                                     Spacer()
                                     
-                                  
+                                    NavigationLink(destination: LinksPage()) { Text("Next") }
                                     
                                     
                                 }
@@ -172,14 +175,15 @@ struct ReflectionPage: View {
             }
         }
     }
-
-
-             //Text
-            
-
-
-struct ReflectionPage_Previews: PreviewProvider {
-    static var previews: some View {
-        ReflectionPage()
+    
+    
+    //Text
+    
+    
+    
+    struct ReflectionPage_Previews: PreviewProvider {
+        static var previews: some View {
+            ReflectionPage()
+        }
     }
 }

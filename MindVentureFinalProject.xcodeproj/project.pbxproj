@@ -60,8 +60,8 @@
 				16277B9C2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift */,
 				16277B9E2A3A3BA4004B8220 /* ContentView.swift */,
 				166050F22A3C001900789255 /* ReflectionPage.swift */,
-				166050F02A3BC5F300789255 /* PromptGen.swift */,
 				00BF1F252A3B977C00D3C07D /* LinksPage.swift */,
+				166050F02A3BC5F300789255 /* PromptGen.swift */,
 				16277BA02A3A3BA7004B8220 /* Assets.xcassets */,
 				16277BA22A3A3BA7004B8220 /* Preview Content */,
 			);

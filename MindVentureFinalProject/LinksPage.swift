@@ -15,7 +15,7 @@ struct LinksPage: View {
                 
             
 
-            VStack {
+            VStack
                 Text("Mental Health Resource Links")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
