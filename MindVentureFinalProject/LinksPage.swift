@@ -9,14 +9,18 @@ import SwiftUI
 
 struct LinksPage: View {
     var body: some View {
+        
+        NavigationView {
         ZStack {
-              Color("Green1")
+            Color("Green1")
                 .edgesIgnoringSafeArea(.all)
                 
-            
+           Spacer()
+            NavigationLink(destination: PromptGen()) { Text("Next") }
 
-            VStack
-                Text("Mental Health Resource Links")
+
+                VStack {
+                    Text("Mental Health Resource Links")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
@@ -139,8 +143,12 @@ struct LinksPage: View {
                     RoundedRectangle(cornerRadius: 60)
                         .stroke(Color(red: 0.674, green: 0.227, blue: 0.334), lineWidth: 29)
                         .edgesIgnoringSafeArea(.all)
+                    
+                    
                                         )
                 )
+            
+    }
           }
         
     struct LinksPage_Previews: PreviewProvider {
