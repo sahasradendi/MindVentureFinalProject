@@ -14,31 +14,41 @@ struct ReflectionPage: View {
              Text("Daily Reflection :)")
                .font(.system(size: 40))
                .fontWeight(.medium)
-               .foregroundColor(.purple)
+               .foregroundColor(.pink)
                .multilineTextAlignment(.center)
              Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+           Spacer()
+           Spacer()
             
             Text("How was your day today?")
               .font(.system(size: 20))
               .fontWeight(.light)
-              .foregroundColor(.purple)
+              .foregroundColor(.green)
+           
+            
+            
             HStack{
               //button
-              Button(":cry:") { print("Sorry, tomorrow will be better!") }
+              Button("😭") { print("Sorry, tomorrow will be better!") }
                 .font(.system(size: 20))
               //button
-              Button(":slightly_frowning_face:") { print("Sorry to hear that!") }
+              Button("😕") { print("Sorry to hear that!") }
                 .font(.system(size: 20))
               //button
-              Button(":neutral_face:") { print("Okay!") }
+              Button("😐") { print("Okay!") }
                 .font(.system(size: 20))
               //button
-              Button(":slightly_smiling_face:") { print("That's good!") }
+              Button("🙂") { print("That's good!") }
                 .font(.system(size: 20))
               //button
-              Button(":grin:") { print("Awesome!") }
+              Button("😀") { print("Awesome!") }
                 .font(.system(size: 20))
             }
+        
+            
             VStack{
               //Text
               Text("How are you feeling?")
@@ -47,19 +57,19 @@ struct ReflectionPage: View {
                 .foregroundColor(.purple)
               HStack{
                 //button
-                Button(":sleepy:") { print("Sorry, tomorrow will be better!") }
+                Button("😴") { print("Sorry, tomorrow will be better!") }
                   .font(.system(size: 20))
                 //button
-                Button(":rage:") { print("Sorry to hear that!") }
+                Button("😡") { print("Sorry to hear that!") }
                   .font(.system(size: 20))
                 //button
-                Button(":neutral_face:") { print("Okay!") }
+                Button("😐") { print("Okay!") }
                   .font(.system(size: 20))
                 //button
-                Button(":yum:") { print("Silly!") }
+                Button("🤤") { print("Silly!") }
                   .font(.system(size: 20))
                 //button
-                Button(":grin:") { print("Awesome!") }
+                Button("😀") { print("Awesome!") }
                   .font(.system(size: 20))
               }
               VStack{

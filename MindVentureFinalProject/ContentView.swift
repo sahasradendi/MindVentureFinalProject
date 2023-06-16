@@ -48,16 +48,9 @@ struct ContentView: View {
                         .cornerRadius(10)
                         .border(.pink, width: CGFloat(wrongUsername))
                     
-                    Button("Login"){
-                        authenticateUser(username: username, password: password)
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
-                    .background(Color.pink)
-                    .cornerRadius(10)
-                    
-                    NavigationLink(destination: LinksPage()) {
+                    NavigationLink(destination: ReflectionPage()) {
                         Text("Login")
+                        
                         
                     }
                     
