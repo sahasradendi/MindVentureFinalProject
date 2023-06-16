@@ -13,6 +13,7 @@
 		16277BA12A3A3BA7004B8220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16277BA02A3A3BA7004B8220 /* Assets.xcassets */; };
 		16277BA42A3A3BA7004B8220 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16277BA32A3A3BA7004B8220 /* Preview Assets.xcassets */; };
 		166050F12A3BC5F300789255 /* PromptGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166050F02A3BC5F300789255 /* PromptGen.swift */; };
+		166050F32A3C001900789255 /* ReflectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166050F22A3C001900789255 /* ReflectionPage.swift */; };
 		167F2BDD2A3B8FC9001B0A86 /* LoginNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F2BDC2A3B8FC9001B0A86 /* LoginNext.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		16277BA02A3A3BA7004B8220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16277BA32A3A3BA7004B8220 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		166050F02A3BC5F300789255 /* PromptGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptGen.swift; sourceTree = "<group>"; };
+		166050F22A3C001900789255 /* ReflectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionPage.swift; sourceTree = "<group>"; };
 		167F2BDC2A3B8FC9001B0A86 /* LoginNext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 			children = (
 				16277B9C2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift */,
 				16277B9E2A3A3BA4004B8220 /* ContentView.swift */,
+				166050F22A3C001900789255 /* ReflectionPage.swift */,
 				00BF1F252A3B977C00D3C07D /* LinksPage.swift */,
 				166050F02A3BC5F300789255 /* PromptGen.swift */,
 				167F2BDC2A3B8FC9001B0A86 /* LoginNext.swift */,
@@ -149,6 +152,7 @@
 				00BF1F262A3B977C00D3C07D /* LinksPage.swift in Sources */,
 				16277B9F2A3A3BA4004B8220 /* ContentView.swift in Sources */,
 				167F2BDD2A3B8FC9001B0A86 /* LoginNext.swift in Sources */,
+				166050F32A3C001900789255 /* ReflectionPage.swift in Sources */,
 				16277B9D2A3A3BA4004B8220 /* MindVentureFinalProjectApp.swift in Sources */,
 				166050F12A3BC5F300789255 /* PromptGen.swift in Sources */,
 			);
