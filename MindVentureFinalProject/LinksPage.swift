@@ -44,8 +44,10 @@ struct LinksPage: View {
                 
                 Link(destination: URL(string: "https://careinfo.mayoclinic.org/mh-depression?mc_id=google&campaign=18451827493&geo=9022196&kw=depression&ad=638111103999&network=g&sitetarget=&adgroup=142809945300&extension=&target=kwd-10387231&matchtype=b&device=c&account=7470347919&placementsite=enterprise&gclid=Cj0KCQjw7aqkBhDPARIsAKGa0oITnZe2v92XxWCGKmeNXUxkif4knlC4L6DyHGyzXqbIE2XoM2pPO-QaAuSzEALw_wcB")!) {
                     Text("Learn more about depression.")
+                    
+                        
                         .background(
-                                        RoundedRectangle(cornerRadius: 10)
+                                RoundedRectangle(cornerRadius: 10)
                                             .foregroundColor(Color(red: 0.227, green: 0.532, blue: 0.113))
                                             .frame(width: 235, height: 20)
                                         
