@@ -70,8 +70,9 @@ struct LinksPage: View {
                     Text("Learn more about depression.")
                         .font(.title3)
                         .fontWeight(.medium)
+
                         .background(
-                                        RoundedRectangle(cornerRadius: 10)
+                                RoundedRectangle(cornerRadius: 10)
                                             .foregroundColor(Color(red: 0.227, green: 0.532, blue: 0.113))
                                             .frame(width: 285, height: 33)
                                         
