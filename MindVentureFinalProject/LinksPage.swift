@@ -16,7 +16,7 @@ struct LinksPage: View {
             
 
             VStack {
-                Text("Mental snsjan Resource Links")
+                Text("Mental Health Resource Links")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
