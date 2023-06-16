@@ -9,9 +9,8 @@ import SwiftUI
 
 struct LinksPage: View {
     var body: some View {
-        
         ZStack {
-            Color("Green1")
+              Color("Green1")
                 .edgesIgnoringSafeArea(.all)
                 
             
@@ -142,8 +141,8 @@ struct LinksPage: View {
                         .edgesIgnoringSafeArea(.all)
                                         )
                 )
-    }
-    
+          }
+        
     struct LinksPage_Previews: PreviewProvider {
         static var previews: some View {
             LinksPage()
